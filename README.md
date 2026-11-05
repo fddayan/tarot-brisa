@@ -1,4 +1,4 @@
-# Tarot Brisa
+# Tarot Rojo
 
 A tarot app built with plain HTML, CSS and a little JavaScript — no build step.
 

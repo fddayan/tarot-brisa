@@ -1,16 +1,16 @@
 /* ==========================================================
-   Tarot Brisa — styles
+   Tarot Rojo — styles
    ========================================================== */
 
 /* ---------- Design tokens ---------- */
 :root {
-  --color-bg: #14111f;
-  --color-surface: #1f1a30;
-  --color-text: #ece6f5;
-  --color-muted: #a99fbf;
-  --color-accent: #d4af6a;
-  --color-accent-soft: rgba(212, 175, 106, 0.15);
-  --color-border: rgba(236, 230, 245, 0.12);
+  --color-bg: #1a0507;
+  --color-surface: #2c0a0e;
+  --color-text: #fde8e6;
+  --color-muted: #d99a97;
+  --color-accent: #f2464e;
+  --color-accent-soft: rgba(242, 70, 78, 0.18);
+  --color-border: rgba(242, 70, 78, 0.25);
 
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Inter", system-ui, -apple-system, sans-serif;
