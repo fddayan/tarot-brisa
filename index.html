@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tarot Brisa — tarot readings and card meanings.">
+  <title>Tarot Brisa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/i18n.js" defer></script>
+  <script src="js/deck.js" defer></script>
+  <script src="js/meanings.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">Tarot Brisa</a>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 data-i18n="heroTitle">Welcome to your reading</h1>
+      <p class="lead" data-i18n="heroLead">How many cards would you like to draw?</p>
+      <ol class="spread-options">
+        <li>
+          <button type="button" class="spread-option" data-count="1">
+            <span class="spread-count">1</span>
+            <span class="spread-title" data-spread-title="1">One Card</span>
+            <span class="spread-label" data-i18n="card">card</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="spread-option" data-count="3">
+            <span class="spread-count">3</span>
+            <span class="spread-title" data-spread-title="3">Past, Present, Future</span>
+            <span class="spread-label" data-i18n="cards">cards</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="spread-option" data-count="10">
+            <span class="spread-count">10</span>
+            <span class="spread-title" data-spread-title="10">Celtic Cross</span>
+            <span class="spread-label" data-i18n="cards">cards</span>
+          </button>
+        </li>
+      </ol>
+    </section>
+
+    <section id="reading" class="reading" aria-live="polite" hidden>
+      <h2 id="reading-title"></h2>
+      <p class="reading-hint" data-i18n="readingHint">Tap a card to turn it over.</p>
+      <ol id="reading-cards" class="reading-cards"></ol>
+
+      <section class="interpretation" aria-labelledby="interpretation-title">
+        <h3 id="interpretation-title" data-i18n="interpretation">Interpretation</h3>
+        <p id="interpretation-empty" class="interpretation-empty" data-i18n="interpretationEmpty">Turn your cards over to read what they mean.</p>
+        <ol id="interpretation-list" class="interpretation-list"></ol>
+      </section>
+      <div class="reading-actions">
+        <button type="button" id="reveal-all" class="button" data-i18n="revealAll">Reveal all</button>
+        <button type="button" id="draw-again" class="button button-quiet" data-i18n="drawAgain">Draw again</button>
+        <button type="button" id="choose-another" class="button button-quiet" data-i18n="chooseAnother">Choose another spread</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Tarot Brisa</p>
+  </footer>
+</body>
+</html>
